@@ -1,67 +1,163 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
+} */
+
+header{
+    background-color: rgb(170, 164, 155);
+    padding: 20px 0; /*20px en Top/Bottom y 0 en los laterales*/
 }
 
-body{
-    background: #CCCCCC;
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto; /*0 de top y bottom y automanico en los bordes, esto para evitar errores en otras pantallas*/
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-.titulo-principal{
-    padding-left: 30px;
-    margin: 15px;
+nav li{
+    display: inline;
+    margin:0 0 0 15px;/*Margen interno para que no esten tan pegados, 15px en izquiera*/
+    
 }
 
-#banner{
-    width:100%;
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-.principal{
-    background: #CCCCCC;
-    padding: 20px;
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
 }
 
-.titulo-centralizado{
-    text-align: center;
-    padding: 15px;
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
-p{
-    text-align: center;
-}
-
-em strong{
-    color:red;
-}
-
-#mision{
-    font-size: 20px;
-}
-
-.diferenciales{
-    background: #FFFFFF;
-    padding: 30px;
-}
-
-
-.items{
-    font-style: italic;
-}
-
-ul{
+.productos div{
     display: inline-block;
+    text-align: center;
+    width: 30%;/*Separar los elementos*/
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    /* background: #CCCCCC; */
+    margin: 0 1.5%; /*Espacio externo entre los elementos*/
+    padding: 30px 20px; /*Espaciamiento interno (vertical horizontal)*/
+    box-sizing: border-box;/*Tamaño de la caja, el borde de cada uno de los items sera el limite del espacio que será definido */
+    border: 2px solid #000000;/*ancho del borde    estilo   color*/
+    border-radius: 10px;
 }
 
-.imagenDiferenciales{
+.productos div:hover{
+    border-color: #c78c19;
+    cursor: pointer;
+}
+
+/*Capturar el clic*/
+.productos div:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos div:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pie-pag{
+    padding: 40px;
+    text-align: center;
+    background: url(assets/bg.jpg);
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* ============================================ */
+/* ==========  Estilos de contacto  =========== */
+/* ============================================ */
+.formulario{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.form{
+    margin: 40px 0;
+}
+
+.form label, .form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padre {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
     width: 50%;
 }
 
-footer{
-    padding: 20px;
-    background-color: aquamarine;
 
+
+.checkbox{
+    padding: 20px 0;
 }
 
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #c78c19;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s all; /*tambien puede ser background, all significa que cambia todo*/
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2); /*Podemos agregar que rote, pero debemos hacerlo en la misma linea, ejemplo: transform: scale(1.2) rotate(70deg) */
+}
+
+.table{
+    margin: 50px 100px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+.table td, th{
+    border: 1.5px solid #000000;
+    padding: 10px 15px;
+}

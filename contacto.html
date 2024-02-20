@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <title>Productos - Barberia</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1>
+                <img src="./assets/logo.png" alt="Logo de Barberia">
+            </h1>
+            <nav >
+                <ul>
+                    <a href="index.html"><li class="items">Home</li></a>
+                    <a href="products.html"><li class="items">Productos</li></a>
+                    <a href="contacto.html"><li class="items">Contacto</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="formulario">
+            <form class="form">
+
+                <label for="fullName">Nombre y Apellido</label>
+                <input type="text" placeholder="Nombre Completo" id="fullName" class="input-padre" required>
+    
+                <label for="email">Correo Electronico</label>
+                <input type="email" placeholder="email@dominio.com" id="email" class="input-padre" required>
+    
+                <label for="phone">Número Telefonico</label>
+                <input type="tel" placeholder="(XX) XXXX XXXX" id="phone" class="input-padre" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10" class="input-padre" required></textarea>
+
+                <fieldset>
+                    <legend>¿Comó le gustaría que lo contactemos?</legend>
+        
+                    <label for="radio-email"><input type="radio" name="contacto" id="radio-email" value="email">Email</label>
+                    
+        
+                    <label for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono" value="telefono">Teléfono</label>
+                    
+        
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
+                    
+        
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En que horario quiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Deseo recibir novedades de la Barberia</label>
+    
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </form>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+    </main>
+
+<footer class="pie-pag">
+    <img src="./assets/logo-blanco.png" alt="Logo de la Barberia">
+    <p class="copyright">&copy Copyright Berberia - 2024</p>
+</footer>
+</body>
+</html>
